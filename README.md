@@ -1,3 +1,1 @@
-##Yantu Afrian Art
-
 Yantu African Art it is a web app which showcase the peace of art crafted, painted, drawn, inspired, coded and designed by an African hands.......
