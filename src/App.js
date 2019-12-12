@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import MainBody from './components/layouts/MainBody';
 
 function App() {
-  return (
-    <div>
-      <h1>Yatu African Art</h1>
-    </div>
-  );
+	return (
+		<div>
+			<MainBody />
+		</div>
+	);
 }
 
 export default App;
