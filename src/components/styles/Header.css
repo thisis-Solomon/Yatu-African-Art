@@ -24,3 +24,56 @@ a:active {
 	font-size: 30px;
 	color: rgb(241, 61, 7);
 }
+
+#toggle{
+	cursor: pointer;
+	margin: 0%;
+	/* padding: 6px; */
+}
+
+.slide-bar{
+	background-color: black;
+	height: 80vh;
+	width: 35%;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	opacity: 0.9;
+	left: -100%;
+	animation: open-slide-bar .90s forwards;
+}
+
+@keyframes open-slide-bar{
+	100% {
+		left: 0
+	}
+}
+
+.slide-nav{
+	background-color: rgb(104, 102, 100, 0.4);
+	z-index: 200%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 0 20px;
+	color: rgb(253, 253, 253);
+	position: relative;
+	height: 60px;
+	animation: close .70s backwards;
+}
+
+@keyframes close {
+	100%{
+		left: -100
+	}
+}
+
+.slide-nav h1{
+	cursor: pointer;
+}
+
+.slide-bar h1:hover{
+	color: red;
+}
