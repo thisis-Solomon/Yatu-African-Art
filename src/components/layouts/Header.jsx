@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
-import { faAlignJustify } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SlideBar from './page/SlideBar';
 
@@ -21,7 +21,7 @@ export default function Header() {
 			<div>
 				{/* Menu bar here */}
 				<menu id='toggle' onClick={openHandler}>
-					<FontAwesomeIcon icon={faAlignJustify} size='2x' />
+					<FontAwesomeIcon icon={faBars} size='2x' />
 				</menu>
 			</div>
 			<div className='font-title'>

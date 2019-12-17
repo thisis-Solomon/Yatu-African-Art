@@ -1,5 +1,5 @@
-a:link,
-a:visited {
+.sign-link a:link,
+.sign-link a:visited {
 	color: rgb(8, 7, 7);
 	padding: 10px 20px;
 	text-align: center;
@@ -8,72 +8,93 @@ a:visited {
 	margin: 10px;
 }
 
-a:hover,
-a:active {
-	background-color:rgb(241, 61, 7);;
+.sign-link a:hover,
+.sign-link a:active {
+	background-color: rgb(241, 61, 7);
 	color: white;
 }
 
 .font-title {
 	font-family: 'Courier New', Courier, monospace;
-	
 }
 
-.font-title h3{
+.font-title h3 {
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 28px;
 	color: rgb(241, 61, 7);
 }
 
-#toggle{
+#toggle {
 	cursor: pointer;
 	margin: 0%;
-	/* padding: 6px; */
 }
 
-.slide-bar{
+.slide-bar {
 	background-color: black;
-	height: 80vh;
-	width: 35%;
+	height: 68.5vh;
+	width: 20%;
 	position: fixed;
 	top: 0;
 	z-index: 200;
-	opacity: 0.9;
 	left: -100%;
-	animation: open-slide-bar .90s forwards;
+	animation: open-slide-bar 0.9s forwards;
 }
 
-@keyframes open-slide-bar{
+@keyframes open-slide-bar {
 	100% {
-		left: 0
+		left: 0;
 	}
 }
 
-.slide-nav{
-	background-color: rgb(104, 102, 100, 0.4);
+.slide-nav {
+	background-color: rgb(255, 250, 245);
 	z-index: 200%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	font-size: 18px;
 	font-family: 'Courier New', Courier, monospace;
-	padding: 0 20px;
-	color: rgb(253, 253, 253);
+	padding: 0 30px;
+	color: rgb(241, 61, 7);
 	position: relative;
-	height: 60px;
-	animation: close .70s backwards;
+	height: 10vh;
+	/* animation: close .70sq backwards; */
 }
 
 @keyframes close {
-	100%{
-		left: -100
+	100% {
+		left: -100;
 	}
 }
 
-.slide-nav h1{
+.slide-nav h1 {
 	cursor: pointer;
 }
 
-.slide-bar h1:hover{
-	color: red;
+.slide-bar h1:hover {
+	color: rgb(53, 50, 50);
+}
+
+.links-categories {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(104, 102, 100, 0.4);
+	color: rgb(253, 253, 253);
+	opacity: 0.9;
+}
+
+.links-categories a:link,
+.links-categories a:visited {
+	/* background-color: #f44336; */
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	background-color: rgb(255, 117, 37);
 }
