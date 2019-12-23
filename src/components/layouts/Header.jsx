@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
+import {Link} from 'react-router-dom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import SlideBar from './page/SlideBar';
+import SlideBar from '../pages/main/SlideBar';
 
 export default function Header() {
 	const [isSlideBarOpen, setIsSlideBarOpen] = useState(false); 
@@ -30,8 +31,8 @@ export default function Header() {
 			</div>
 			<div className='sign-link'>
 				{/* signing links */}
-				<a href='/#'>Log in</a>
-				<a href='/#'>Register</a>
+				<Link to = 'login'>Log in</Link>
+				<Link to = 'register'> Register </Link>
 			</div>
 			{/* the sidebar variable to open and close */}
 			{openSlideBar}

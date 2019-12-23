@@ -1,12 +1,12 @@
 import React from 'react';
-import MainBody from './components/layouts/MainBody';
-import Header from './components/layouts/Header';
-
+import {Route} from 'react-router-dom';
+import { HomePage } from './components/pages/main/HomePage';
+import LoginPage from './components/pages/header/LoginPage';
 function App() {
 	return (
 		<div>
-			<Header />
-			<MainBody />
+			<Route path = '/' exact component = {HomePage}/>
+			<Route path = '/login' exact component = {LoginPage}/>
 		</div>
 	);
 }

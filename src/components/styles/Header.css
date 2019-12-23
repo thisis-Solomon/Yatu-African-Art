@@ -93,8 +93,8 @@
 	display: inline-block;
 }
 
-a:hover,
-a:active {
+.links-categories a:hover,
+.links-categories a:active {
 	text-decoration: none;
 	background-color: rgb(255, 117, 37);
 }
