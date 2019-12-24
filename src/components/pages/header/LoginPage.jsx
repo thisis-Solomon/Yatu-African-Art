@@ -1,9 +1,11 @@
 import React from 'react';
 import LoginForm from '../../forms/LoginForm';
-
+import {login} from '../../actions/auth'
+import { connect } from 'react-redux';
 class LoginPage extends React.Component {
 	submit = dataForm => {
 		console.log(dataForm);
+		this.props.login(dataForm).then(()=> this.props.history.push('/'));
 	};
 	render() {
 		return (
@@ -15,4 +17,4 @@ class LoginPage extends React.Component {
 	}
 }
 
-export default LoginPage;
+export default connect(null, {login}) (LoginPage);
